@@ -1,0 +1,145 @@
+@import "./normalize.css";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+p {
+  position: relative;
+  font-size: 14px;
+  /* line-height: 24px; */
+  color: hsl(0, 0%, 38%);
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.navigation > div {
+  display: inline-block;
+  margin-right:100px;
+  margin-bottom: 40px;
+  padding: 1%;
+}
+
+.navigation {
+  margin-left:160px;
+}
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(98,98,98);
+}
+
+a :hover {
+	color: #03a9f4;
+}
+
+body {
+    /* display: flex; */
+  box-sizing: border-box;
+  max-width: 920px;
+  margin-right: auto;
+  margin-left:  auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+article {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 60px;
+  margin-bottom: 130px;
+  /* height: 480px; */
+  width: 420px;
+}
+
+article > div {
+  height: 280px;
+  width: 420px;
+  margin-bottom: 30px;
+  background-color: #ccf;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: initial;
+  background-size: auto;
+}
+
+.article-1,
+.article-3,
+.article-5 {
+  display: block;
+  float: left;
+}
+
+.article-2,
+.article-4,
+.article-6 {
+  display: block;
+  float: right;
+  margin-right: 0;
+}
+
+.article-5, .article-6 {
+margin-bottom: 50px;
+}
+
+h3 + p {
+  line-height: 24px;
+}
+
+.images1 {
+  background-image: url("../img/1.music_festival.jpg");
+}
+.images2 {
+  background-image: url("../img/2.cup_of_coffee.jpg");
+}
+.images3 {
+  background-image: url("../img/3.girls_and_bridge.jpg");
+  background-position: 50% 90%;
+}
+.images4 {
+  background-image: url("../img/4.girl_and_theAlps.jpg");
+}
+.images5 {
+  background-image: url("../img/5.girl_on_road.jpg");
+  background-position: 50% 73%;
+}
+.images6 {
+  background-image: url("../img/6.winter_road.jpg");
+}
+
+.name-category {
+  /* font-size: 14px; */
+  color: #b4ad9e;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 30px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+
+button {
+  display: block;
+  box-sizing: content-box;
+  margin: 0 auto;
+  /* position: absolute;  */
+  width: 103px;
+  height: 60px;
+  padding: 0px 30px;
+  border: solid 1px black;
+  background: white;
+}
+
+button {
+  font-size: 20px;
+}
+
+button:hover {
+	color: #03a9f4;
+	/* box-shadow: inset 0 0 0 3px #3a7999; */
+}
