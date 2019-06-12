@@ -3,50 +3,54 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 
-p {
-  position: relative;
+p, nav, a {
+  /* position: relative; */
   font-size: 14px;
-  /* line-height: 24px; */
-  color: hsl(0, 0%, 38%);
-  font-family: "Playfair Display", "Arial", sans-serif;
+  line-height: 24px;
+  color: #626262;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
-}
-
-.navigation > div {
-  display: inline-block;
-  margin-right:100px;
-  margin-bottom: 40px;
-  padding: 1%;
-}
-
-.navigation {
-  margin-left:160px;
-}
-
-
-a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(98,98,98);
 }
 
-a :hover {
+.wrapper {
+box-sizing: border-box;
+width: 900px;
+margin:auto;
+/* padding-right: 10px;
+padding-left: 10px; */
+}
+
+nav > ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  /* color: rgb(98,98,98); */
+  margin-top: 75px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+#last {
+margin-right: 0px;
+}
+ 
+
+a:hover {
 	color: #03a9f4;
 }
 
-body {
-    /* display: flex; */
-  box-sizing: border-box;
-  max-width: 920px;
-  margin-right: auto;
-  margin-left:  auto;
-  padding-right: 10px;
-  padding-left: 10px;
+section {
+  font-size: 0;
 }
 
 article {
   display: inline-block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin-right: 60px;
   margin-bottom: 130px;
   /* height: 480px; */
@@ -64,26 +68,18 @@ article > div {
   background-size: auto;
 }
 
-.article-1,
-.article-3,
-.article-5 {
-  display: block;
-  float: left;
-}
-
 .article-2,
 .article-4,
 .article-6 {
-  display: block;
-  float: right;
   margin-right: 0;
 }
 
 .article-5, .article-6 {
-margin-bottom: 50px;
+margin-bottom: 55px;
 }
 
 h3 + p {
+
   line-height: 24px;
 }
 
@@ -109,14 +105,14 @@ h3 + p {
 }
 
 .name-category {
-  /* font-size: 14px; */
+  font-size: 14px;
   color: #b4ad9e;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-h3 {
+article > h3 {
   font-size: 30px;
   color: #626262;
   font-family: "Playfair Display";
@@ -133,9 +129,7 @@ button {
   padding: 0px 30px;
   border: solid 1px black;
   background: white;
-}
-
-button {
+  margin-bottom: 75px;
   font-size: 20px;
 }
 
