@@ -1,7 +1,14 @@
 @import "./normalize.css";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,900&display=swap");
 
-.clearfix {
+.navigation,
+.product-list,
+.bog-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.clearfix::after {
   display: table;
   content: "";
   clear: both;
@@ -9,12 +16,13 @@
 
 .navigation,
 p,
-button {
+.button,
+h4 {
   font-family: "Open Sans", sans-serif;
   line-height: 26px;
 }
 
-.site-logo,
+h1,
 h2,
 h3 {
   font-family: "Roboto", sans-serif;
@@ -23,60 +31,57 @@ h3 {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   color: #555252;
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
   padding: 0 35px;
 }
 
 /* Navigation menu */
 .page-header {
-  margin-top: 30px;
   margin-bottom: 102px;
 }
 
-.site-logo,
+.nav {
+  padding-top: 35px;
+}
+
+.site-logo h1,
 .navigation li,
 .navigation a {
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
-.navigation,
-.product-list,
-.bog-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.site-logo {
+.site-logo h1 {
   display: inline-block;
   font-weight: 300;
   font-size: 30px;
 }
 
-.site-logo::first-letter {
+.site-logo h1::first-letter {
   color: #1abc9c;
   font-weight: 900;
   font-size: 30px;
 }
 
 .navigation {
-  width: 475px;
   float: right;
   margin-top: 10px;
 }
 
 .navigation li {
+  float: left;
   font-weight: 700;
   font-size: 14px;
   list-style: none;
   line-height: 11px;
   margin-right: 30px;
-  float: left;
 }
 
 .navigation li:last-child {
@@ -92,10 +97,6 @@ a:focus {
 .product-list {
   margin-bottom: 100px;
   font-size: 0px;
-}
-
-.products a {
-  text-decoration: none;
 }
 
 h2 {
@@ -127,8 +128,6 @@ h2::after {
 }
 
 .product-info {
-  width: 255px;
-  /* height: 40px; */
   color: #ffffff;
   background-color: #323232;
   font-weight: 900;
@@ -196,8 +195,8 @@ h2::after {
   margin-bottom: 16px;
 }
 
-button {
-  display: block;
+.button {
+  display: inline-block;
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
