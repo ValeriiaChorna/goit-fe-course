@@ -17,14 +17,15 @@
 .navigation,
 p,
 .button,
-h4 {
+h4,
+h3.bog-name {
   font-family: "Open Sans", sans-serif;
   line-height: 26px;
 }
 
 h1,
 h2,
-h3 {
+h3.product-name {
   font-family: "Roboto", sans-serif;
   line-height: 32px;
   text-transform: uppercase;
@@ -51,20 +52,20 @@ a {
   padding-top: 35px;
 }
 
-.site-logo h1,
+.site-logo,
 .navigation li,
 .navigation a {
   color: #000000;
   text-transform: uppercase;
 }
 
-.site-logo h1 {
-  display: inline-block;
+.site-logo {
+  float: left;
   font-weight: 300;
   font-size: 30px;
 }
 
-.site-logo h1::first-letter {
+.site-logo::first-letter {
   color: #1abc9c;
   font-weight: 900;
   font-size: 30px;
@@ -111,8 +112,7 @@ h2::after {
   height: 7px;
   background-color: #1abc9c;
   content: " ";
-  margin: 0 auto;
-  margin-top: 36px;
+  margin: 36px auto 0;
 }
 
 .product-item {
@@ -173,10 +173,10 @@ h2::after {
 }
 
 .bog-name {
-  margin-top: 0px;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .bog-name::after {
@@ -189,10 +189,10 @@ h2::after {
 }
 
 .bog-text {
-  margin: 0 auto;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .button {
