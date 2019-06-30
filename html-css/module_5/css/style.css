@@ -308,26 +308,32 @@ p.price {
   background-image: url(../img/button-clock.png);
 }
 
-.button-basket {
-  display: inline-block;
-  padding-left: 48px;
+a.button-basket {
+  position: relative;
+  padding-left: 50px;
+  padding-top: 8px;
   width: 118px;
-  height: 48px;
+  height: 40px;
   color: #fff;
   text-align: center;
+  font-size: 14px;
   font-weight: 400;
   line-height: 32px;
+  text-transform: uppercase;
 }
 
-.button-basket::before {
+a.button-basket::before {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
-  contain: " ";
-  font-size: 0;
+  content: " ";
   width: 48px;
-  height: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 48px;
   background-image: url(../img/button-basket.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 6;
 }
 
 /* hover item */
