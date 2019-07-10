@@ -1,0 +1,135 @@
+@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Fonts */
+
+.logo > a,
+.menu-item > a,
+h2.section-name,
+h3,
+h3 > a,
+.footer-disr,
+.submit {
+  font-family: "Montserrat";
+}
+
+.logo > a,
+.menu-item > a {
+  color: #95e1d3;
+}
+
+h2.section-name,
+.section-prename,
+h3 > a,
+.footer-disr {
+  color: #333333;
+}
+
+.logo > a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.menu-item > a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.section-prename {
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+}
+
+h2.section-name {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3,
+.footer-disr {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p,
+.team-item-disr,
+#your-email {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.designed {
+  color: #f38181;
+}
+
+.team-item-disr,
+#your-email {
+  font-weight: 300;
+  font-style: italic;
+}
+
+h2::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  content: " ";
+  margin: 40px auto 0;
+}
+
+/* Все эффекты hover сделать используя CSS-переходы, длительность 200ms, 
+функция распеределения времени linear. */
+
+/* Header */
+
+/* Section Services */
+
+/* Section Our-team  */
+
+/* Footer */
+
+#your-email {
+  color: #cccccc;
+  width: 230px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+}
+
+.submit {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+}
