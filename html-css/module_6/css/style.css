@@ -36,7 +36,8 @@ h3 > a,
 h2.section-name,
 .section-prename,
 h3 > a,
-.footer-disr {
+.footer-disr,
+#your-email {
   color: #333333;
 }
 
@@ -52,10 +53,13 @@ h3 > a,
 }
 
 .section-prename {
+  display: block;
   font-size: 24px;
   font-family: "Kaushan Script";
   font-weight: 400;
   text-align: center;
+  text-transform: none;
+  margin-bottom: 30px;
 }
 
 h2.section-name {
@@ -76,8 +80,7 @@ h3 {
 }
 
 p,
-.team-item-disr,
-#your-email {
+.team-item-disr {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -89,8 +92,7 @@ p,
   color: #f38181;
 }
 
-.team-item-disr,
-#your-email {
+.team-item-disr {
   font-weight: 300;
   font-style: italic;
 }
@@ -327,7 +329,8 @@ h2::after {
 }
 
 #your-email {
-  color: #cccccc;
+  font-family: "Roboto";
+  font-size: 15px;
   width: 230px;
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
@@ -341,8 +344,22 @@ h2::after {
   align-items: stretch;
 }
 
-.subscribe > p {
-  margin: 0;
+input:-moz-placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #cccccc;
+  font-style: italic;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #cccccc;
+  font-style: italic;
 }
 
 .submit {
