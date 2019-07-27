@@ -32,3 +32,7 @@
   text-align: center;
   padding: 0 20px;
 }
+
+a.promo-button {
+  background: var(--altern-color);
+}

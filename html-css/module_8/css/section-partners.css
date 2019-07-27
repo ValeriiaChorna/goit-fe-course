@@ -91,4 +91,5 @@ a.partners-button {
 a.partners-button:hover,
 a.partners-button:focus {
   color: var(--second-color);
+  background: var(--altern-color);
 }

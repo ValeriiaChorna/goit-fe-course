@@ -48,10 +48,3 @@ a.partners-button {
   font-weight: 700;
   text-align: center;
 }
-
-a.promo-button:hover,
-a.partners-button:hover,
-a.promo-button:focus,
-a.partners-button:focus {
-  background-color: var(--altern-color);
-}
