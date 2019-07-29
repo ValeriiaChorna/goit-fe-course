@@ -20,7 +20,7 @@ body {
   --second-color: #ffffff;
   --disr-color: #666666;
   --altern-color: #ff4e50;
-}
+ }
 
 h1,
 h2,
@@ -29,7 +29,7 @@ h3 {
 }
 
 .wrapper {
-  width: 320px;
+  width: 300px;
   padding: 0 10px;
   margin: 0 auto;
 }
