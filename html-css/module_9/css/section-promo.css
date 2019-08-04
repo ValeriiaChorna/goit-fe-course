@@ -1,0 +1,46 @@
+.promo-banner {
+  height: 540px;
+  background: url(../img/main-background.png), rgb(26, 25, 21);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.promo-contener {
+  height: 100%;
+  color: var(--second-color);
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  padding-top: 80px;
+}
+
+.promo-discr {
+  height: 100%;
+}
+
+.promo-discr > div {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.promo-title {
+  max-width: 298px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  text-transform: uppercase;
+  /* text-align: center; */
+}
+
+.promo-subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+a.promo-button {
+  background: var(--altern-color);
+}
