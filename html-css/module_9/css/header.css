@@ -11,11 +11,11 @@ header {
   z-index: 2;
 }
 
-.header > div,
+/* .header > div,
 .logo {
   padding-left: 0;
   padding-right: 0;
-}
+} */
 
 .login-list {
   /* display: flex;
