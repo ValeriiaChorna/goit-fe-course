@@ -1,0 +1,101 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap");
+
+/* Colors */
+
+body {
+  --main-color: #333333;
+  --second-color: #95e1d3;
+  --disr-color: #999999;
+  --altern-color: #f38181;
+  color: var(--main-color);
+}
+
+/* Units */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.page-nav__logo > a,
+.menu-navigation__item > a,
+.section-name,
+h3,
+h3 > a,
+.page-footer__discr,
+.submit {
+  font-family: "Montserrat";
+}
+
+.section-name,
+.section-prename,
+h3 > a,
+.page-footer__discr,
+#your-email {
+  color: var(--main-color);
+}
+
+.section-prename {
+  display: block;
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+.section-name {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.service-section__name::after,
+.team-section__name::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--altern-color);
+  content: " ";
+  margin: 40px auto 0;
+}
+
+h3,
+.page-footer__discr {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p,
+.team-list__item-discr {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--disr-color);
+  font-family: "Roboto";
+  font-weight: 400;
+  margin: 0;
+}

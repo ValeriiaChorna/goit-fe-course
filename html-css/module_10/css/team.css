@@ -1,0 +1,117 @@
+/* Section Our-team  */
+
+.team-section__discription {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 90px;
+  width: 980px;
+}
+
+.team-section__team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.team-list__item-discr {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.team-list__item-name,
+.team-list__item-discr {
+  text-align: center;
+}
+
+.team-list__foto {
+  position: relative;
+  font-size: 0;
+  background-color: var(--second-color);
+}
+
+.team-list__img {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition-property: left, top;
+  transition-duration: 0.2s;
+}
+.team-list__item:hover .team-list__img {
+  top: -10px;
+  left: -10px;
+}
+.team-list__item:hover .team-list__overlay {
+  visibility: visible;
+  top: -10px;
+  left: -10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.team-list__overlay {
+  position: absolute;
+  display: flex;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  transition-property: visibility, left, top, right, bottom;
+  transition-duration: 200ms;
+}
+
+.overlay__social-icon a {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay__social-icon:not(:last-child) {
+    margin-right: 2px;
+  }
+
+.overlay__social-img {
+  fill: var(--altern-color);
+}
+
+.overlay__social-icon a:hover {
+  background-color: var(--altern-color);
+}
+
+.overlay__social-icon a:hover .overlay__social-img{
+    fill: #fff;
+}
+
+
+/*   
+  .facebook a {
+    background-image: url(../img/links/facebook.png);
+  }
+  
+  .twetter a {
+    background-image: url(../img/links/twitter.png);
+  }
+  
+  .pinterest a {
+    background-image: url(../img/links/pinterest.png);
+  }
+  .instagram a {
+    background-image: url(../img/links/instagram.png);
+  } */

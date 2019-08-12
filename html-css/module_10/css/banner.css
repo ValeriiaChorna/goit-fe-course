@@ -1,0 +1,119 @@
+/* Header */
+
+.banner {
+  height: 1000px;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)
+    ),
+    url("../img/baner-background.jpg") center/cover no-repeat;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url("../img/baner-background@2x.jpg") center/cover no-repeat;
+  }
+}
+
+.page-nav {
+  display: flex;
+  min-height: 100px;
+  margin-bottom: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav__logo > a,
+.menu-navigation__item > a,
+.banner__header {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.page-nav__logo {
+  margin: 0;
+}
+
+.page-nav__logo > a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.page-nav__menu-navigation {
+  display: flex;
+  width: 490px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-navigation__item {
+  position: relative;
+}
+
+.menu-navigation__item > a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 200ms linear;
+}
+
+.menu-navigation__item > a::after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #fce38a;
+  content: " ";
+  margin: 10px auto 0;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.menu-navigation__item > a:hover,
+.menu-navigation__item > a:focus {
+  color: #fce38a;
+  fill: #fce38a;
+}
+
+.menu-navigation__item > a:hover::after,
+.menu-navigation__item > a:focus::after {
+  opacity: 1;
+}
+
+.banner__main {
+  font-size: 150px;
+  color: inherit;
+}
+
+.banner__span {
+  font-size: 72px;
+  color: inherit;
+}
+
+.banner__link {
+  display: block;
+  width: 166px;
+  height: 46px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #ffffff;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner__link > p {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding-top: 10px;
+}
