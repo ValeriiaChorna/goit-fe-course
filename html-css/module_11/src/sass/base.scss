@@ -1,0 +1,76 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    color: $main-color;
+  }
+  
+  
+  .page-nav__logo > a,
+  .menu-navigation__item > a,
+  .section-name,
+  h3,
+  h3 > a,
+  .page-footer__discr,
+  .page-footer__submit {
+    font-family: $main-font-stack;
+  }
+  
+  .section-name,
+  .section-prename,
+  h3 > a,
+  .page-footer__discr,
+  #your-email {
+    color: $main-color;
+  }
+  
+  .section-prename {
+    display: block;
+    font-size: 24px;
+    font-family: $altern-font-stack;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+  
+  .section-name {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .service-section__name::after,
+  .team-section__name::after {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $altern-color;
+    content: " ";
+    margin: 40px auto 0;
+  }
+  
+  h3,
+  .page-footer__discr {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+  }
+  
+  p,
+  .team-list__item-discr {
+    font-size: 15px;
+    line-height: 24px;
+    color: $disr-color;
+    font-family: $secondary-font-stack;
+    font-weight: 400;
+    margin: 0;
+  }
+  

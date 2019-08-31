@@ -1,0 +1,43 @@
+#your-email {
+    font-family: $secondary-font-stack;
+    font-size: 15px;
+    width: 230px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    padding: 0 10px;
+  }
+  
+  .page-footer__subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  
+  input:-moz-placeholder,
+  input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $secondary-font-stack;
+    font-weight: 300;
+    color: #cccccc;
+    font-style: italic;
+  }
+  
+  .page-footer__submit {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: $second-color;
+    border: none;
+  }
+  

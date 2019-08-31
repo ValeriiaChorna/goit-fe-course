@@ -1,0 +1,47 @@
+/* Section Our-team  */
+
+.team-section__discription {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 90px;
+    width: 980px;
+  }
+  
+  .team-section__team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+  
+  .team-list__item-discr {
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .team-list__item-name,
+  .team-list__item-discr {
+    text-align: center;
+  }
+  
+  .team-list__foto {
+    position: relative;
+    font-size: 0;
+    background-color: $second-color;
+  }
+  
+  .team-list__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: left, top;
+    -o-transition-property: left, top;
+    transition-property: left, top;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  }

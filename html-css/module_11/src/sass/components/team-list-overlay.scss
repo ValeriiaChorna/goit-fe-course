@@ -1,0 +1,81 @@
+.team-list__item:hover .team-list__img {
+  top: -10px;
+  left: -10px;
+}
+.team-list__item:hover .team-list__overlay {
+  visibility: visible;
+  top: -10px;
+  left: -10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.team-list__overlay {
+  @include center-flex('all');
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  background: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  -webkit-transition-property: visibility, left, top, right, bottom;
+  -o-transition-property: visibility, left, top, right, bottom;
+  transition-property: visibility, left, top, right, bottom;
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+.overlay__social-icon a {
+  @include center-flex('all');
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: $banner-hover-color;
+  /* background-repeat: no-repeat;
+      background-position: center; */
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+
+  & > svg {
+    @include center-flex('all');
+  }
+
+  &:hover {
+    background-color: $altern-color;
+  }
+
+  &:hover .overlay__social-img {
+    fill: #fff;
+  }
+}
+
+.overlay__social-icon:not(:last-child) {
+  margin-right: 2px;
+}
+
+.overlay__social-img {
+  fill: $altern-color;
+}
