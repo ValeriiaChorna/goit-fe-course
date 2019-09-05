@@ -7,6 +7,22 @@
     color: $main-color;
   }
   
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .wrapper {
+    width: 1190px;
+    margin: 0 auto;
+  }
   
   .page-nav__logo > a,
   .menu-navigation__item > a,

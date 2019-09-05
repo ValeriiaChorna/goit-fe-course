@@ -1,25 +1,20 @@
-/*
-   Import partials below
-*/
+// Utils
+
 @import 'helpers/variables';
 @import 'helpers/mixins';
-@import 'normalize';
-@import 'base';
+
+// Base style
+
+@import 'base/normalize';
+@import 'base/base-style';
+
+// Main page layout
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
 // Components
 
-@import 'components/link';
-@import 'components/list';
-@import 'components/wrapper';
-
-@import 'components/banner';
 @import 'components/page-logo';
 @import 'components/page-nav';
-
-@import 'components/services';
-
-@import 'components/team';
-@import 'components/team-list-overlay';
-
-@import 'components/footer';
-@import 'components/subscribe-form';

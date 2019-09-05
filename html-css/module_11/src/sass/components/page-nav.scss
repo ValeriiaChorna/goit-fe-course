@@ -10,65 +10,65 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
+  &__menu-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 490px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.menu-navigation__item {
+  position: relative;
+
+  & > a {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+
+    &::after {
+      display: block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background-color: $banner-hover-color;
+      content: ' ';
+      margin: 10px auto 0;
+      opacity: 0;
+      -webkit-transition: opacity 200ms linear;
+      -o-transition: opacity 200ms linear;
+      transition: opacity 200ms linear;
+    }
+
+    &:hover,
+    &:focus {
+      color: $banner-hover-color;
+      fill: $banner-hover-color;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+  }
 }
 
 .menu-navigation__item > a,
 .banner__header {
   color: $banner-font-color;
   fill: $banner-font-color;
-}
-
-.page-nav__menu-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 490px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.menu-navigation__item {
-  position: relative;
-}
-
-.menu-navigation__item > a {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  -webkit-transition: color 200ms linear;
-  -o-transition: color 200ms linear;
-  transition: color 200ms linear;
-
-  &::after {
-    display: block;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: $banner-hover-color;
-    content: ' ';
-    margin: 10px auto 0;
-    opacity: 0;
-    -webkit-transition: opacity 200ms linear;
-    -o-transition: opacity 200ms linear;
-    transition: opacity 200ms linear;
-  }
-
-  &:hover,
-  &:focus {
-    color: $banner-hover-color;
-    fill: $banner-hover-color;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
 }
